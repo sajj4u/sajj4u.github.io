@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Multi-Tier Data Protection Architecture for Microsoft Azure Workloads | Sajid Sarwar</title>
+  <meta name="description" content="A practitioner technical report by Sajid Sarwar on multi-tier Azure data protection using NetBackup Snapshot Manager, local deduplicated recovery, immutable off-site copies and long-term tape retention.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sajj4u.github.io/publications/azure-data-protection-architecture/">
+
+  <meta name="citation_title" content="A Multi-Tier Data Protection Architecture for Microsoft Azure Workloads">
+  <meta name="citation_author" content="Sajid Sarwar">
+  <meta name="citation_publication_date" content="2026/08/18">
+  <meta name="citation_pdf_url" content="https://sajj4u.github.io/publications/azure-data-protection-architecture/Sajid-Sarwar-Azure-Data-Protection-Architecture.pdf">
+  <meta name="citation_technical_report_institution" content="Independent Practitioner">
+  <meta name="citation_technical_report_number" content="SS-TR-2026-01">
+  <meta name="DC.title" content="A Multi-Tier Data Protection Architecture for Microsoft Azure Workloads">
+  <meta name="DC.creator" content="Sajid Sarwar">
+  <meta name="DC.date" content="2026-08-18">
+  <meta name="DC.type" content="Technical Report">
+  <meta name="DC.format" content="application/pdf">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A Multi-Tier Data Protection Architecture for Microsoft Azure Workloads">
+  <meta property="og:description" content="A sanitized practitioner reference architecture for Azure workload protection, immutable recovery and long-term retention.">
+  <meta property="og:url" content="https://sajj4u.github.io/publications/azure-data-protection-architecture/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "A Multi-Tier Data Protection Architecture for Microsoft Azure Workloads",
+    "author": {"@type": "Person", "name": "Sajid Sarwar", "url": "https://sajj4u.github.io/"},
+    "datePublished": "2026-08-18",
+    "version": "1.0",
+    "genre": "Practitioner Technical Report",
+    "keywords": ["Microsoft Azure", "NetBackup", "Snapshot Manager", "data protection", "disaster recovery", "immutable backup", "restore validation"],
+    "url": "https://sajj4u.github.io/publications/azure-data-protection-architecture/",
+    "encoding": {"@type": "MediaObject", "contentUrl": "https://sajj4u.github.io/publications/azure-data-protection-architecture/Sajid-Sarwar-Azure-Data-Protection-Architecture.pdf", "encodingFormat": "application/pdf"}
+  }
+  </script>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#10283a;background:#f6f9fb;line-height:1.65}
+    *{box-sizing:border-box}body{margin:0}.wrap{width:min(860px,calc(100% - 2rem));margin:auto}header{padding:1.1rem 0;border-bottom:1px solid #dbe5eb;background:#fff}header a{color:#166b7a;text-decoration:none;font-weight:750}main{padding:4.2rem 0 5rem}.kicker{color:#177f8d;font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}h1{margin:.6rem 0 1rem;font-size:clamp(2.25rem,6vw,4.4rem);line-height:1.04;letter-spacing:-.045em;color:#0b2545}.meta{color:#617484}.abstract{margin:2.4rem 0;padding:1.5rem 1.6rem;border-left:4px solid #28a7a0;background:#fff;box-shadow:0 10px 35px rgba(11,37,69,.06)}h2{color:#0b2545}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin:2rem 0}.button{display:inline-flex;padding:.78rem 1.05rem;border-radius:.65rem;background:#1b9f99;color:#fff;text-decoration:none;font-weight:800}.button.secondary{background:#fff;color:#166b7a;border:1px solid #b9d2db}.keywords{color:#526b78}footer{padding:1.8rem 0;border-top:1px solid #dbe5eb;color:#617484;background:#fff}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a href="https://sajj4u.github.io/">Sajid Sarwar · Technical Portfolio</a></div></header>
+  <main class="wrap">
+    <p class="kicker">Practitioner Technical Report · SS-TR-2026-01</p>
+    <h1>A Multi-Tier Data Protection Architecture for Microsoft Azure Workloads</h1>
+    <p class="meta"><strong>Sajid Sarwar</strong><br>Independent Practitioner, IT Infrastructure and Cloud Engineering · Kuwait<br>Version 1.0 · Published 18 August 2026</p>
+
+    <div class="actions">
+      <a class="button" href="Sajid-Sarwar-Azure-Data-Protection-Architecture.pdf">Read the full report (PDF)</a>
+      <a class="button secondary" href="https://github.com/sajj4u/azure-data-protection-reference-architecture">View the companion project</a>
+    </div>
+
+    <section class="abstract">
+      <h2>Abstract</h2>
+      <p>Cloud adoption does not remove the need for independent, tested and governed data protection. This report presents a multi-tier architecture for protecting Microsoft Azure workloads across multiple subscriptions through NetBackup Snapshot Manager and a dedicated NetBackup environment. The design combines snapshot-based protection, local deduplicated backup storage for operational recovery, an immutable or tightly controlled off-site recovery copy, and long-term retention through an established tape environment. It also addresses private connectivity, private DNS, managed identities, role-based access, application-aware protection, restore validation and operational handover.</p>
+    </section>
+
+    <h2>What the report covers</h2>
+    <ul>
+      <li>Multi-subscription Azure workload discovery and protection orchestration</li>
+      <li>Managed identity, RBAC, private connectivity and private DNS integration</li>
+      <li>Local deduplicated storage for rapid operational recovery</li>
+      <li>Immutable or tightly controlled off-site recovery copies</li>
+      <li>Long-term retention through an established tape environment</li>
+      <li>Application consistency, restore validation, governance and handover</li>
+    </ul>
+    <p class="keywords"><strong>Keywords:</strong> Microsoft Azure, NetBackup, Snapshot Manager, cloud backup, disaster recovery, immutable backup, long-term retention, restore validation.</p>
+    <p><em>This is a sanitized reference architecture. It contains no client names, credentials, hostnames, addresses, subscription identifiers or production configuration values.</em></p>
+  </main>
+  <footer><div class="wrap">© 2026 Sajid Sarwar · <a href="mailto:sajj4u@yahoo.com">Contact the author</a></div></footer>
+</body>
+</html>
