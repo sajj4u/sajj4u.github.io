@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sajj4u.github.io/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>\n    <loc>https://sajj4u.github.io/publications/azure-data-protection-architecture/index.html</loc>\n    <lastmod>2026-08-18</lastmod>\n    <changefreq>yearly</changefreq>\n    <priority>0.8</priority>\n  </url>\n</urlset>
+  <url>
+    <loc>https://sajj4u.github.io/publications/azure-data-protection-architecture/index.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sajj4u.github.io/publications/hybrid-cloud-backup-disaster-recovery/index.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sajj4u.github.io/publications/microsoft-365-data-protection/index.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sajj4u.github.io/publications/azure-landing-zone-disaster-recovery/index.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
